@@ -1,0 +1,19 @@
+.backgroundMain {
+	-fx-background-color: #1f1f1f;
+}
+
+.masterButtons {
+  -fx-background-color:#121212;
+}
+
+.masterButtons:hover {
+  -fx-background-color:#404040;
+}
+
+.equalButton {
+  -fx-background-color:#00258c;
+}
+
+.equalButton:hover {
+  -fx-background-color:#003ce3;
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="355.0" styleClass="backgroundMain" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.FXMLDocumentController">
+    <children>
+        <Button fx:id="btnEqual" layoutX="267.0" layoutY="421.0" onAction="#clickResultado" prefHeight="66.0" prefWidth="68.0" styleClass="equalButton" text="=" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+         </Button>
+      <Label fx:id="lblCampo" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="20.0" layoutY="14.0" prefHeight="58.0" prefWidth="315.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="45.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <Button fx:id="btnSoma" layoutX="267.0" layoutY="341.0" onAction="#clickSoma" prefHeight="66.0" prefWidth="68.0" styleClass="masterButtons" stylesheets="@style.css" text="+" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMulti" layoutX="267.0" layoutY="182.0" onAction="#clickMulti" prefHeight="66.0" prefWidth="68.0" styleClass="masterButtons" stylesheets="@style.css" text="X" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDivisao" layoutX="267.0" layoutY="101.0" onAction="#clickDivisao" prefHeight="66.0" prefWidth="68.0" styleClass="masterButtons" stylesheets="@style.css" text="/" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn9" layoutX="177.0" layoutY="182.0" mnemonicParsing="false" onAction="#clickNumero9" prefHeight="66.0" prefWidth="57.0" styleClass="masterButtons" stylesheets="@style.css" text="9" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn8" layoutX="103.0" layoutY="182.0" mnemonicParsing="false" onAction="#clickNumero8" prefHeight="66.0" prefWidth="57.0" styleClass="masterButtons" stylesheets="@style.css" text="8" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn7" layoutX="27.0" layoutY="182.0" mnemonicParsing="false" onAction="#clickNumero7" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="7" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn1" layoutX="27.0" layoutY="341.0" mnemonicParsing="false" onAction="#clickNumero1" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="1" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn2" layoutX="103.0" layoutY="341.0" mnemonicParsing="false" onAction="#clickNumero2" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="2" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn4" layoutX="27.0" layoutY="261.0" mnemonicParsing="false" onAction="#clickNumero4" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="4" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn3" layoutX="177.0" layoutY="341.0" mnemonicParsing="false" onAction="#clickNumero3" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="3" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn5" layoutX="103.0" layoutY="261.0" mnemonicParsing="false" onAction="#clickNumero5" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="5" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn6" layoutX="177.0" layoutY="261.0" mnemonicParsing="false" onAction="#clickNumero6" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="6" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn0" layoutX="104.0" layoutY="421.0" mnemonicParsing="false" onAction="#clickNumero0" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdicao" layoutX="267.0" layoutY="261.0" onAction="#clickAdicao" prefHeight="66.0" prefWidth="68.0" styleClass="masterButtons" stylesheets="@style.css" text="-" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="176.0" layoutY="101.0" onAction="#clickClear" prefHeight="66.0" prefWidth="57.0" styleClass="masterButtons" stylesheets="@style.css" text="C" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPercent" layoutX="104.0" layoutY="101.0" mnemonicParsing="false" onAction="#clickPercent" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="\%" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNegativo" layoutX="27.0" layoutY="421.0" mnemonicParsing="false" onAction="#clickNegativo" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="+/-" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPonto" layoutX="178.0" layoutY="421.0" mnemonicParsing="false" onAction="#clickPonto" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="." textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemove" layoutX="27.0" layoutY="101.0" mnemonicParsing="false" onAction="#clickRemove" prefHeight="66.0" prefWidth="56.0" styleClass="masterButtons" stylesheets="@style.css" text="R" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
