@@ -6,6 +6,7 @@
 package calculadora;
 
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ResourceBundle;
 import java.util.Set;
 import javafx.event.ActionEvent;
@@ -28,7 +29,7 @@ public class FXMLDocumentController implements Initializable {
     public int operacaoPre;
     public int i = 0;
     public Boolean finalizado = false;
-    public String[] oldMemoria = new String[15];
+    public String[] oldMemoria = new String[15];    
 
     @FXML
     private void clickNumero0(ActionEvent event) {
@@ -198,8 +199,13 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    public void mostraResultado() {
+    public void mostraResultado() {       
+        if(String.valueOf(resultadoCalculo).contains(String.valueOf(".0"))){            
+            lblCampo.setText(String.format("%.0f",resultadoCalculo));
+        } else {
         lblCampo.setText(String.valueOf(resultadoCalculo));
+        }
+        
     }
 
     @FXML
